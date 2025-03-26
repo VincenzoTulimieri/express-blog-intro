@@ -1,7 +1,7 @@
 // express
 const express = require('express')
 const app = express()
-const port = 2200
+const port = 3000
 
 // importazione file menu
 const menu = require('./menu.js')
