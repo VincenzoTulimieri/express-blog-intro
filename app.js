@@ -1,8 +1,17 @@
+// express
 const express = require('express')
 const app = express()
 const port = 2200
 
+// importazione file menu
+const menu = require('./menu.js')
 
+
+app.use(express.static('pubblic'))
+
+app.get('/menu', (req,res)=>{
+    res.json(menu)
+})
 
 
 app.get('/', (req,res)=>{
