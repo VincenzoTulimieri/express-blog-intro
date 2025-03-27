@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 // importazione file menu
-const menu = require('./menu.js')
+const menu = require('./data/menu.js')
 
 
 app.use(express.static('pubblic'))
